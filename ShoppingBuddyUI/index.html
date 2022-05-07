@@ -1,0 +1,122 @@
+<html lang="en">
+
+<head>
+    <title>ShoppingBuddy</title>
+    <script src="ComparisonReport.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://unpkg.com/tabulator-tables@4.8.4/dist/css/tabulator.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.8.4/dist/js/tabulator.min.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid" style="padding-top:20px; padding-bottom:20px;">
+        <div class="container">
+          <h1 class="display-4">ShoppingBuddy</h1>
+          <p class="lead">Your buddy for informed shopping decisions.</p>
+        </div>
+    </div>
+ 
+    <div class="container">
+        <div class="panel panel-default input-UI" style="padding:10px">
+            <div class="url-list">
+                <div class="input-group control-group">
+                    <input type="text" name="addmore[]" class="form-control url-input" placeholder="Enter URL">
+                    <div class="input-group-btn">
+                        <button class="btn btn-danger remove" type="button" disabled=true><i
+                                class="glyphicon glyphicon-remove"></i>
+                            Remove</button>
+                    </div>
+                </div>
+
+                <div class="input-group control-group after-add-more" style="margin-top:10px">
+                    <input type="text" name="addmore[]" class="form-control url-input" placeholder="Enter URL">
+                    <div class="input-group-btn">
+                        <button class="btn btn-danger remove" type="button" disabled=true><i
+                                class="glyphicon glyphicon-remove"></i>
+                            Remove</button>
+                    </div>
+                </div>
+            </div>
+
+            <div style='text-align: center; margin-bottom:5px;'>
+                <button class="btn btn-success add-more" type="button" style="margin-top:10px"><i
+                        class="glyphicon glyphicon-plus"></i> Add URL </button>
+
+                <button class="btn btn-success compare" type="button"
+                    style="margin-bottom: 10 px; margin-left:10px;  margin-top:10px"><i
+                        class="glyphicon glyphicon-transfer"></i> Compare </button>
+            </div>
+
+
+            <!-- Copy Fields -->
+            <div class="copy hide">
+                <div class="control-group input-group" style="margin-top:10px">
+                    <input type="text" name="addmore[]" class="form-control url-input" placeholder="Enter URL">
+                    <div class="input-group-btn">
+                        <button class="btn btn-danger remove" type="button"><i class="glyphicon glyphicon-remove"></i>
+                            Remove</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="comparison-table"></div>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        num_url = 2
+
+        $(document).ready(function () {
+
+            $(".add-more").click(function () {
+                if (num_url < 4) {
+                    var html = $(".copy").html();
+                    $(".url-list").append(html);
+                    num_url = num_url + 1;
+                    if (num_url == 4) {
+                        $(".add-more").prop('disabled', true);
+                    }
+                    $(".remove").prop('disabled', false);
+                }
+            });
+
+            $("body").on("click", ".remove", function () {
+                if (num_url > 2) {
+                    $(".add-more").prop('disabled', false);
+                    num_url = num_url - 1;
+                    $(this).parents(".control-group").remove();
+                    if (num_url == 2) {
+                        $(".remove").prop('disabled', true);
+                    }
+                }
+            });
+
+            $(".compare").click(function () {
+                console.log("inside compare")
+                urls = [];
+
+                //url1 = document.getElementById('url1').value; url2 = document.getElementById('url2').value; url3 = document.getElementById('url3').value; url4 = document.getElementById('url4').value; urls = []; if (url1.length > 0) { urls.push(url1) } if (url2.length > 0) { urls.push(url2) } if (url3.length > 0) { urls.push(url3) } if (url4.length > 0) { urls.push(url4) }
+
+                $('.url-input').each(function (i, obj) {
+                    if ($(this).val().length > 0) {
+                        urls.push($(this).val());
+                    }
+                });
+
+                console.log(urls);
+                category = "laptop";
+                updateComparisonReport(category, urls);
+            });
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

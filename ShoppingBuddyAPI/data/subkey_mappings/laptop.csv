@@ -1,0 +1,34 @@
+﻿Key,SubKey,Order,Caption,Description,ShowCaption
+BATTERY,BATTERY-CELL,1,Cell Count,,N
+DGFX,DGFX-TYPE,1,Memory Type,GDDRn,N
+DGFX,DGFX-SIZE,2,Size,,N
+DIM,DIM-HEIGHT,1,Height,,N
+DIM,DIM-WEIGHT,2,Weight,,N
+DIM,DIM-LENGTH,3,Length,,N
+DISP,DISP-TOUCH,4,Touchscreen,,Y
+DISP,DISP-SIZE,2,Size,,N
+DISP,DISP-RES,3,Resolution,,N
+DISP,DISP-TYPE,1,Type,,N
+HDD,HDD-SIZE,1,Size,,N
+HDD,HDD-ROT,2,Rotational Speed,,N
+HDD,HDD-INFC,3,Interface,,N
+OS,OS-ARC,2,Architecture,32 bit,N
+OS,OS-NAME,1,Name,Windows,N
+PROC,PROC-BRAND,1,Brand,"Intel, AMD",N
+PROC,PROC-NAME,2,Name,Core 2 Duo,N
+PROC,PROC-VAR,3,Variant,2630QM,N
+PROC,PROC-FREQ,4,Frequency,,N
+PROC,PROC-CACHE,5,Cache,,Y
+PROC,PROC-CORES,6,Cores,,Y
+RAM,RAM-TYPE,1,Type,DDRn,N
+RAM,RAM-SIZE,2,Size,,N
+RAM,RAM-MAX,4,Max Supported,,N
+RAM,RAM-FREQ,3,Frequency,,N
+SSD,SSD-SIZE,1,Size,,N
+SSD,SSD-INFC,2,Interface,"M.2, SATA3",N
+USB,USB2,1,,,
+USB,USB3,2,,,
+BATTERY,BATTERY-STANDBY,1,Standby,,Y
+BATTERY,BATTERY-AVG,2,,,Y
+CONN,CONN-BLU,1,,,
+CONN,CONN-WIFI,2,,,

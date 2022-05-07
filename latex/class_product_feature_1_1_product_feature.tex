@@ -1,0 +1,108 @@
+\hypertarget{class_product_feature_1_1_product_feature}{}\doxysection{Product\+Feature.\+Product\+Feature Class Reference}
+\label{class_product_feature_1_1_product_feature}\index{ProductFeature.ProductFeature@{ProductFeature.ProductFeature}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_product_feature_1_1_product_feature_a6beb4ff32576204ec9e424e8883aa67a}{get\+Folder\+Contents}} (self, path, index)
+\item 
+def \mbox{\hyperlink{class_product_feature_1_1_product_feature_af6cce6026345229dcb46613601b2d8c0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{class_product_feature_1_1_product_feature_a2101fc17458f9f0871b3550c56222772}{map\+Product\+Features}} (self, category, details, site)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_product_feature_1_1_product_feature_a44c72612625d53d4f0dd730dd700f0fd}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_product_feature_1_1_product_feature_acbfc8d0141bff36fa949fee210854918}{subkey\+\_\+map}}
+\item 
+\mbox{\hyperlink{class_product_feature_1_1_product_feature_a6070f01e7b1c9a03d6bbe4c14ac5754e}{key\+\_\+mappings}}
+\item 
+\mbox{\hyperlink{class_product_feature_1_1_product_feature_ab63d8b634e7376529c71e36fc823f824}{word\+\_\+mappings}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A singleton class to generalize product features.
+Attributes:
+    subkey_map: Dataframe
+        Mapping of subkeys and keys
+    word_mappings: Dataframe
+        Mapping of words to subkeys
+    key_mappings: Dataframe
+        Properties of Key mappings
+Methods:
+    getInstance()
+        static method to return the sigleton instance of ProductFeature.
+    mapProductFeatures(category,details,site)
+        method to map feature list to generic features.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_product_feature_1_1_product_feature_af6cce6026345229dcb46613601b2d8c0}\label{class_product_feature_1_1_product_feature_af6cce6026345229dcb46613601b2d8c0}} 
+\index{ProductFeature.ProductFeature@{ProductFeature.ProductFeature}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!ProductFeature.ProductFeature@{ProductFeature.ProductFeature}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Product\+Feature.\+Product\+Feature.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The constructor of ProductFeature class.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_product_feature_1_1_product_feature_a6beb4ff32576204ec9e424e8883aa67a}\label{class_product_feature_1_1_product_feature_a6beb4ff32576204ec9e424e8883aa67a}} 
+\index{ProductFeature.ProductFeature@{ProductFeature.ProductFeature}!getFolderContents@{getFolderContents}}
+\index{getFolderContents@{getFolderContents}!ProductFeature.ProductFeature@{ProductFeature.ProductFeature}}
+\doxysubsubsection{\texorpdfstring{getFolderContents()}{getFolderContents()}}
+{\footnotesize\ttfamily def Product\+Feature.\+Product\+Feature.\+get\+Folder\+Contents (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path,  }\item[{}]{index }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The method to get contents of a folder in a dataframe with the given index.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_product_feature_1_1_product_feature_a44c72612625d53d4f0dd730dd700f0fd}\label{class_product_feature_1_1_product_feature_a44c72612625d53d4f0dd730dd700f0fd}} 
+\index{ProductFeature.ProductFeature@{ProductFeature.ProductFeature}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ProductFeature.ProductFeature@{ProductFeature.ProductFeature}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily def Product\+Feature.\+Product\+Feature.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}This is a static method to return the sigleton instance of ProductFeature.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_product_feature_1_1_product_feature_a2101fc17458f9f0871b3550c56222772}\label{class_product_feature_1_1_product_feature_a2101fc17458f9f0871b3550c56222772}} 
+\index{ProductFeature.ProductFeature@{ProductFeature.ProductFeature}!mapProductFeatures@{mapProductFeatures}}
+\index{mapProductFeatures@{mapProductFeatures}!ProductFeature.ProductFeature@{ProductFeature.ProductFeature}}
+\doxysubsubsection{\texorpdfstring{mapProductFeatures()}{mapProductFeatures()}}
+{\footnotesize\ttfamily def Product\+Feature.\+Product\+Feature.\+map\+Product\+Features (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{category,  }\item[{}]{details,  }\item[{}]{site }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The method to map the product features to generic features and perform necessary refactoring.
+Parameters:
+    category:str
+        category of the product
+    details:Dictonary
+        details or features of the product
+    site:str
+        Amazon or Flipkart
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_product_feature_1_1_product_feature_a6070f01e7b1c9a03d6bbe4c14ac5754e}\label{class_product_feature_1_1_product_feature_a6070f01e7b1c9a03d6bbe4c14ac5754e}} 
+\index{ProductFeature.ProductFeature@{ProductFeature.ProductFeature}!key\_mappings@{key\_mappings}}
+\index{key\_mappings@{key\_mappings}!ProductFeature.ProductFeature@{ProductFeature.ProductFeature}}
+\doxysubsubsection{\texorpdfstring{key\_mappings}{key\_mappings}}
+{\footnotesize\ttfamily Product\+Feature.\+Product\+Feature.\+key\+\_\+mappings}
+
+\mbox{\Hypertarget{class_product_feature_1_1_product_feature_acbfc8d0141bff36fa949fee210854918}\label{class_product_feature_1_1_product_feature_acbfc8d0141bff36fa949fee210854918}} 
+\index{ProductFeature.ProductFeature@{ProductFeature.ProductFeature}!subkey\_map@{subkey\_map}}
+\index{subkey\_map@{subkey\_map}!ProductFeature.ProductFeature@{ProductFeature.ProductFeature}}
+\doxysubsubsection{\texorpdfstring{subkey\_map}{subkey\_map}}
+{\footnotesize\ttfamily Product\+Feature.\+Product\+Feature.\+subkey\+\_\+map}
+
+\mbox{\Hypertarget{class_product_feature_1_1_product_feature_ab63d8b634e7376529c71e36fc823f824}\label{class_product_feature_1_1_product_feature_ab63d8b634e7376529c71e36fc823f824}} 
+\index{ProductFeature.ProductFeature@{ProductFeature.ProductFeature}!word\_mappings@{word\_mappings}}
+\index{word\_mappings@{word\_mappings}!ProductFeature.ProductFeature@{ProductFeature.ProductFeature}}
+\doxysubsubsection{\texorpdfstring{word\_mappings}{word\_mappings}}
+{\footnotesize\ttfamily Product\+Feature.\+Product\+Feature.\+word\+\_\+mappings}
+

@@ -1,0 +1,150 @@
+\hypertarget{class_amazon_1_1_amazon_scrapper}{}\doxysection{Amazon.\+Amazon\+Scrapper Class Reference}
+\label{class_amazon_1_1_amazon_scrapper}\index{Amazon.AmazonScrapper@{Amazon.AmazonScrapper}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_amazon_1_1_amazon_scrapper_a0eac51fab71633a638d07c7efe603b67}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{class_amazon_1_1_amazon_scrapper_a16a34c4df124604316cce9a7787e892a}{url}})
+\item 
+def \mbox{\hyperlink{class_amazon_1_1_amazon_scrapper_a2d9d5e69d3ae67115fb40948844a1a36}{get\+\_\+title}} (self)
+\item 
+def \mbox{\hyperlink{class_amazon_1_1_amazon_scrapper_a0c3c478a6b30f5e894413bf548062828}{get\+\_\+features}} (self)
+\item 
+def \mbox{\hyperlink{class_amazon_1_1_amazon_scrapper_a68b0dd3756318707ebeecfe3aa2573a7}{get\+\_\+price}} (self)
+\item 
+def \mbox{\hyperlink{class_amazon_1_1_amazon_scrapper_af54ae63397786c0c55f86514617a9fa1}{get\+\_\+ratings}} (self)
+\item 
+def \mbox{\hyperlink{class_amazon_1_1_amazon_scrapper_a0924349b036ec75a38802a2a17070d8e}{get\+\_\+number\+\_\+of\+\_\+ratings}} (self)
+\item 
+def \mbox{\hyperlink{class_amazon_1_1_amazon_scrapper_a00cb599fde4d40e6e4d3b34741d4e230}{get\+\_\+info}} (self)
+\item 
+def \mbox{\hyperlink{class_amazon_1_1_amazon_scrapper_aa99100c2c82fc6f5eb3f316e9d11cdbd}{get\+\_\+category}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_amazon_1_1_amazon_scrapper_a16a34c4df124604316cce9a7787e892a}{url}}
+\item 
+\mbox{\hyperlink{class_amazon_1_1_amazon_scrapper_aef765553277a40a13956af57ea989020}{soup}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This is a class for scrapping product details from an Amazon website.
+...
+Attributes:
+    url: str
+        The Amazon website URL of the product which needs to be scrapped.
+    soup: BeautifulSoup object 
+        BeautifulSoup object of the Amazon website.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_amazon_1_1_amazon_scrapper_a0eac51fab71633a638d07c7efe603b67}\label{class_amazon_1_1_amazon_scrapper_a0eac51fab71633a638d07c7efe603b67}} 
+\index{Amazon.AmazonScrapper@{Amazon.AmazonScrapper}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!Amazon.AmazonScrapper@{Amazon.AmazonScrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Amazon.\+Amazon\+Scrapper.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{url }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The constructor of AmazonScrapper class.
+Parameters:
+    url: str
+        The Amazon website URL of the product which needs to be scrapped.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_amazon_1_1_amazon_scrapper_aa99100c2c82fc6f5eb3f316e9d11cdbd}\label{class_amazon_1_1_amazon_scrapper_aa99100c2c82fc6f5eb3f316e9d11cdbd}} 
+\index{Amazon.AmazonScrapper@{Amazon.AmazonScrapper}!get\_category@{get\_category}}
+\index{get\_category@{get\_category}!Amazon.AmazonScrapper@{Amazon.AmazonScrapper}}
+\doxysubsubsection{\texorpdfstring{get\_category()}{get\_category()}}
+{\footnotesize\ttfamily def Amazon.\+Amazon\+Scrapper.\+get\+\_\+category (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The function to scrape the category of the product.
+Returns:
+    category: str
+        category of the product.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_amazon_1_1_amazon_scrapper_a0c3c478a6b30f5e894413bf548062828}\label{class_amazon_1_1_amazon_scrapper_a0c3c478a6b30f5e894413bf548062828}} 
+\index{Amazon.AmazonScrapper@{Amazon.AmazonScrapper}!get\_features@{get\_features}}
+\index{get\_features@{get\_features}!Amazon.AmazonScrapper@{Amazon.AmazonScrapper}}
+\doxysubsubsection{\texorpdfstring{get\_features()}{get\_features()}}
+{\footnotesize\ttfamily def Amazon.\+Amazon\+Scrapper.\+get\+\_\+features (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The function to scrape features of the product.
+Returns:
+    features: Dictionary
+        A key value dictionary of product features 
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_amazon_1_1_amazon_scrapper_a00cb599fde4d40e6e4d3b34741d4e230}\label{class_amazon_1_1_amazon_scrapper_a00cb599fde4d40e6e4d3b34741d4e230}} 
+\index{Amazon.AmazonScrapper@{Amazon.AmazonScrapper}!get\_info@{get\_info}}
+\index{get\_info@{get\_info}!Amazon.AmazonScrapper@{Amazon.AmazonScrapper}}
+\doxysubsubsection{\texorpdfstring{get\_info()}{get\_info()}}
+{\footnotesize\ttfamily def Amazon.\+Amazon\+Scrapper.\+get\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The function to scrape all the information of the product.
+Returns:
+    product_info: Dictionary
+        Dictionary of all the information scraped of the product.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_amazon_1_1_amazon_scrapper_a0924349b036ec75a38802a2a17070d8e}\label{class_amazon_1_1_amazon_scrapper_a0924349b036ec75a38802a2a17070d8e}} 
+\index{Amazon.AmazonScrapper@{Amazon.AmazonScrapper}!get\_number\_of\_ratings@{get\_number\_of\_ratings}}
+\index{get\_number\_of\_ratings@{get\_number\_of\_ratings}!Amazon.AmazonScrapper@{Amazon.AmazonScrapper}}
+\doxysubsubsection{\texorpdfstring{get\_number\_of\_ratings()}{get\_number\_of\_ratings()}}
+{\footnotesize\ttfamily def Amazon.\+Amazon\+Scrapper.\+get\+\_\+number\+\_\+of\+\_\+ratings (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The function to scrape the number of users who have given rating of the product.
+Returns:
+    n:str
+        Number of ratings of the product
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_amazon_1_1_amazon_scrapper_a68b0dd3756318707ebeecfe3aa2573a7}\label{class_amazon_1_1_amazon_scrapper_a68b0dd3756318707ebeecfe3aa2573a7}} 
+\index{Amazon.AmazonScrapper@{Amazon.AmazonScrapper}!get\_price@{get\_price}}
+\index{get\_price@{get\_price}!Amazon.AmazonScrapper@{Amazon.AmazonScrapper}}
+\doxysubsubsection{\texorpdfstring{get\_price()}{get\_price()}}
+{\footnotesize\ttfamily def Amazon.\+Amazon\+Scrapper.\+get\+\_\+price (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The function to scrape price of the product.
+Returns:
+    mrp: str
+        M.R.P. of the product
+    price: str
+        Selling price of the product
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_amazon_1_1_amazon_scrapper_af54ae63397786c0c55f86514617a9fa1}\label{class_amazon_1_1_amazon_scrapper_af54ae63397786c0c55f86514617a9fa1}} 
+\index{Amazon.AmazonScrapper@{Amazon.AmazonScrapper}!get\_ratings@{get\_ratings}}
+\index{get\_ratings@{get\_ratings}!Amazon.AmazonScrapper@{Amazon.AmazonScrapper}}
+\doxysubsubsection{\texorpdfstring{get\_ratings()}{get\_ratings()}}
+{\footnotesize\ttfamily def Amazon.\+Amazon\+Scrapper.\+get\+\_\+ratings (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The function to scrape user ratings of the product.
+Returns:
+    rating: str
+        Rating of the product
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_amazon_1_1_amazon_scrapper_a2d9d5e69d3ae67115fb40948844a1a36}\label{class_amazon_1_1_amazon_scrapper_a2d9d5e69d3ae67115fb40948844a1a36}} 
+\index{Amazon.AmazonScrapper@{Amazon.AmazonScrapper}!get\_title@{get\_title}}
+\index{get\_title@{get\_title}!Amazon.AmazonScrapper@{Amazon.AmazonScrapper}}
+\doxysubsubsection{\texorpdfstring{get\_title()}{get\_title()}}
+{\footnotesize\ttfamily def Amazon.\+Amazon\+Scrapper.\+get\+\_\+title (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The function to scrape Title of the product.
+Returns:
+    title: str
+        Title of the product
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_amazon_1_1_amazon_scrapper_aef765553277a40a13956af57ea989020}\label{class_amazon_1_1_amazon_scrapper_aef765553277a40a13956af57ea989020}} 
+\index{Amazon.AmazonScrapper@{Amazon.AmazonScrapper}!soup@{soup}}
+\index{soup@{soup}!Amazon.AmazonScrapper@{Amazon.AmazonScrapper}}
+\doxysubsubsection{\texorpdfstring{soup}{soup}}
+{\footnotesize\ttfamily Amazon.\+Amazon\+Scrapper.\+soup}
+
+\mbox{\Hypertarget{class_amazon_1_1_amazon_scrapper_a16a34c4df124604316cce9a7787e892a}\label{class_amazon_1_1_amazon_scrapper_a16a34c4df124604316cce9a7787e892a}} 
+\index{Amazon.AmazonScrapper@{Amazon.AmazonScrapper}!url@{url}}
+\index{url@{url}!Amazon.AmazonScrapper@{Amazon.AmazonScrapper}}
+\doxysubsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily Amazon.\+Amazon\+Scrapper.\+url}
+
